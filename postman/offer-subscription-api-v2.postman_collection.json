@@ -1,0 +1,308 @@
+{
+  "info" : {
+    "name" : "offer-subscription-api-v2 Postman Collection",
+    "description" : "Comprehensive API for managing offers, subscriptions, renewals, payments, and notifications\n\nOpenAPI version: 3.0.0",
+    "schema" : "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth" : {
+    "type" : "bearer",
+    "bearer" : [ {
+      "key" : "token",
+      "value" : "{{accessToken}}",
+      "type" : "string"
+    } ]
+  },
+  "variable" : [ {
+    "key" : "baseUrl",
+    "value" : "https://mocktarget.apigee.net/json/v2/offer-subscription",
+    "type" : "string",
+    "description" : "Override with the base URL of the deployed Apigee proxy."
+  }, {
+    "key" : "accessToken",
+    "value" : "",
+    "type" : "string"
+  }, {
+    "key" : "offerId",
+    "value" : "",
+    "type" : "string"
+  }, {
+    "key" : "userId",
+    "value" : "",
+    "type" : "string"
+  }, {
+    "key" : "status",
+    "value" : "",
+    "type" : "string"
+  }, {
+    "key" : "subscriptionId",
+    "value" : "",
+    "type" : "string"
+  }, {
+    "key" : "paymentId",
+    "value" : "",
+    "type" : "string"
+  } ],
+  "item" : [ {
+    "name" : "List available offers",
+    "request" : {
+      "method" : "GET",
+      "description" : "List available offers\n\nResponses:\n- 200: List of offers",
+      "header" : [ ],
+      "url" : {
+        "raw" : "{{baseUrl}}/offers",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "offers" ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Get offer details",
+    "request" : {
+      "method" : "GET",
+      "description" : "Get offer details\n\nResponses:\n- 200: Offer details\n- 404: Offer not found",
+      "header" : [ ],
+      "url" : {
+        "raw" : "{{baseUrl}}/offers/:offerId",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "offers", ":offerId" ],
+        "variable" : [ {
+          "key" : "offerId",
+          "value" : "{{offerId}}"
+        } ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "List subscriptions",
+    "request" : {
+      "method" : "GET",
+      "description" : "List subscriptions\n\nResponses:\n- 200: List of subscriptions",
+      "header" : [ ],
+      "url" : {
+        "raw" : "{{baseUrl}}/subscriptions?userId={{userId}}&status={{status}}",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "subscriptions" ],
+        "query" : [ {
+          "key" : "userId",
+          "value" : "{{userId}}",
+          "disabled" : true
+        }, {
+          "key" : "status",
+          "value" : "{{status}}",
+          "disabled" : true
+        } ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Create a subscription",
+    "request" : {
+      "method" : "POST",
+      "description" : "Create a subscription\n\nResponses:\n- 201: Subscription created",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "type" : "text"
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "{}",
+        "options" : {
+          "raw" : {
+            "language" : "json"
+          }
+        }
+      },
+      "url" : {
+        "raw" : "{{baseUrl}}/subscriptions",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "subscriptions" ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Get subscription details",
+    "request" : {
+      "method" : "GET",
+      "description" : "Get subscription details\n\nResponses:\n- 200: Subscription details",
+      "header" : [ ],
+      "url" : {
+        "raw" : "{{baseUrl}}/subscriptions/:subscriptionId",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "subscriptions", ":subscriptionId" ],
+        "variable" : [ {
+          "key" : "subscriptionId",
+          "value" : "{{subscriptionId}}"
+        } ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Cancel subscription",
+    "request" : {
+      "method" : "DELETE",
+      "description" : "Cancel subscription\n\nResponses:\n- 204: Subscription cancelled",
+      "header" : [ ],
+      "url" : {
+        "raw" : "{{baseUrl}}/subscriptions/:subscriptionId",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "subscriptions", ":subscriptionId" ],
+        "variable" : [ {
+          "key" : "subscriptionId",
+          "value" : "{{subscriptionId}}"
+        } ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Update subscription",
+    "request" : {
+      "method" : "PATCH",
+      "description" : "Update subscription\n\nResponses:\n- 200: Subscription updated",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "type" : "text"
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "{}",
+        "options" : {
+          "raw" : {
+            "language" : "json"
+          }
+        }
+      },
+      "url" : {
+        "raw" : "{{baseUrl}}/subscriptions/:subscriptionId",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "subscriptions", ":subscriptionId" ],
+        "variable" : [ {
+          "key" : "subscriptionId",
+          "value" : "{{subscriptionId}}"
+        } ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Renew subscription",
+    "request" : {
+      "method" : "POST",
+      "description" : "Renew subscription\n\nResponses:\n- 200: Subscription renewed",
+      "header" : [ ],
+      "url" : {
+        "raw" : "{{baseUrl}}/subscriptions/:subscriptionId/renew",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "subscriptions", ":subscriptionId", "renew" ],
+        "variable" : [ {
+          "key" : "subscriptionId",
+          "value" : "{{subscriptionId}}"
+        } ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Pause subscription",
+    "request" : {
+      "method" : "POST",
+      "description" : "Pause subscription\n\nResponses:\n- 200: Subscription paused",
+      "header" : [ ],
+      "url" : {
+        "raw" : "{{baseUrl}}/subscriptions/:subscriptionId/pause",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "subscriptions", ":subscriptionId", "pause" ],
+        "variable" : [ {
+          "key" : "subscriptionId",
+          "value" : "{{subscriptionId}}"
+        } ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Resume paused subscription",
+    "request" : {
+      "method" : "POST",
+      "description" : "Resume paused subscription\n\nResponses:\n- 200: Subscription resumed",
+      "header" : [ ],
+      "url" : {
+        "raw" : "{{baseUrl}}/subscriptions/:subscriptionId/resume",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "subscriptions", ":subscriptionId", "resume" ],
+        "variable" : [ {
+          "key" : "subscriptionId",
+          "value" : "{{subscriptionId}}"
+        } ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Create payment",
+    "request" : {
+      "method" : "POST",
+      "description" : "Create payment\n\nResponses:\n- 201: Payment created",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "type" : "text"
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "{}",
+        "options" : {
+          "raw" : {
+            "language" : "json"
+          }
+        }
+      },
+      "url" : {
+        "raw" : "{{baseUrl}}/payments",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "payments" ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Get payment details",
+    "request" : {
+      "method" : "GET",
+      "description" : "Get payment details\n\nResponses:\n- 200: Payment details",
+      "header" : [ ],
+      "url" : {
+        "raw" : "{{baseUrl}}/payments/:paymentId",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "payments", ":paymentId" ],
+        "variable" : [ {
+          "key" : "paymentId",
+          "value" : "{{paymentId}}"
+        } ]
+      }
+    },
+    "response" : [ ]
+  }, {
+    "name" : "Send notification",
+    "request" : {
+      "method" : "POST",
+      "description" : "Send notification\n\nResponses:\n- 202: Notification queued",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "type" : "text"
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "{}",
+        "options" : {
+          "raw" : {
+            "language" : "json"
+          }
+        }
+      },
+      "url" : {
+        "raw" : "{{baseUrl}}/notifications/send",
+        "host" : [ "{{baseUrl}}" ],
+        "path" : [ "notifications", "send" ]
+      }
+    },
+    "response" : [ ]
+  } ]
+}

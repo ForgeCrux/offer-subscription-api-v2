@@ -1,0 +1,254 @@
+{
+  "microserviceId" : "6a7f1c6c5b14632584804f33",
+  "mocks" : [ {
+    "id" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+    "microserviceId" : "6a7f1c6c5b14632584804f33",
+    "specMetadataId" : "6a7f1c8de3a11656ce5359c5",
+    "apiSpecName" : "Offer-Subscription-API-V2",
+    "name" : "mock-offer-subscription-api-v2",
+    "mockServiceName" : "mock-offer-subscription-api-v2",
+    "mockServerUrl" : "https://forgesphere.probestack.io/mock-api/v1/api/mocks/mock-f521e7c7",
+    "responseLatencyMs" : 0,
+    "mockUrl" : "mock-f521e7c7",
+    "isPrivate" : true,
+    "delayMs" : 0,
+    "requestCount" : 13,
+    "createdAt" : "2026-08-14T13:48:12.806Z",
+    "updatedAt" : "2026-08-14T13:48:19.442Z",
+    "endpoints" : [ {
+      "id" : "02248f46-3e9d-43d1-87b4-5a46a606e629",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/notifications/send",
+      "method" : "POST",
+      "responseStatus" : 202,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : "{\"userId\":\"string\",\"message\":\"string\",\"channel\":\"EMAIL\"}",
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.957Z",
+      "updatedAt" : "2026-08-14T13:48:12.957Z"
+    }, {
+      "id" : "d83f73de-cf3f-4c43-a434-1609d29e1845",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/offers",
+      "method" : "GET",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "[{\"id\":\"offer_101\",\"name\":\"Gold Plan\",\"description\":\"Premium access subscription\",\"price\":19.99,\"currency\":\"USD\",\"durationDays\":30}]",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.848Z",
+      "updatedAt" : "2026-08-14T13:48:12.848Z"
+    }, {
+      "id" : "c9860cbf-3ea2-4c35-896b-f163f44c5f57",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/offers/{offerId}",
+      "method" : "GET",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"id\":\"offer_101\",\"name\":\"Gold Plan\",\"description\":\"Premium access subscription\",\"price\":19.99,\"currency\":\"USD\",\"durationDays\":30}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.860Z",
+      "updatedAt" : "2026-08-14T13:48:12.860Z"
+    }, {
+      "id" : "67e3dab3-adb3-4bbd-b873-9e1fad9aafe4",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/payments",
+      "method" : "POST",
+      "responseStatus" : 201,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"paymentId\":\"pay_9001\",\"subscriptionId\":\"string\",\"amount\":0,\"currency\":\"string\",\"status\":\"SUCCESS\",\"transactionDate\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : "{\"subscriptionId\":\"string\",\"amount\":0,\"currency\":\"string\"}",
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.941Z",
+      "updatedAt" : "2026-08-14T13:48:12.941Z"
+    }, {
+      "id" : "adb28414-96ec-4e0c-8dca-8dc4e3421568",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/payments/{paymentId}",
+      "method" : "GET",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"paymentId\":\"pay_9001\",\"subscriptionId\":\"string\",\"amount\":0,\"currency\":\"string\",\"status\":\"SUCCESS\",\"transactionDate\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.950Z",
+      "updatedAt" : "2026-08-14T13:48:12.950Z"
+    }, {
+      "id" : "4fd6b4e0-16c2-4480-83c1-327ebaec38fc",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/subscriptions",
+      "method" : "GET",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "[{\"id\":\"sub_1001\",\"userId\":\"user_2001\",\"offerId\":\"offer_101\",\"status\":\"ACTIVE\",\"startDate\":\"2024-01-01T00:00:00Z\",\"endDate\":\"2024-01-01T00:00:00Z\"}]",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.867Z",
+      "updatedAt" : "2026-08-14T13:48:12.868Z"
+    }, {
+      "id" : "8cafa2d5-a738-4bc1-866c-1600311a9b9d",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/subscriptions",
+      "method" : "POST",
+      "responseStatus" : 201,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"id\":\"sub_1001\",\"userId\":\"user_2001\",\"offerId\":\"offer_101\",\"status\":\"ACTIVE\",\"startDate\":\"2024-01-01T00:00:00Z\",\"endDate\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : "{\"userId\":\"string\",\"offerId\":\"string\"}",
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.877Z",
+      "updatedAt" : "2026-08-14T13:48:12.878Z"
+    }, {
+      "id" : "3436feda-4107-4d46-8bf8-bc88425819e0",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/subscriptions/{subscriptionId}",
+      "method" : "DELETE",
+      "responseStatus" : 204,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.896Z",
+      "updatedAt" : "2026-08-14T13:48:12.896Z"
+    }, {
+      "id" : "5446c82e-188c-4541-b8d2-91c0bc8644f7",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/subscriptions/{subscriptionId}",
+      "method" : "GET",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"id\":\"sub_1001\",\"userId\":\"user_2001\",\"offerId\":\"offer_101\",\"status\":\"ACTIVE\",\"startDate\":\"2024-01-01T00:00:00Z\",\"endDate\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.888Z",
+      "updatedAt" : "2026-08-14T13:48:12.888Z"
+    }, {
+      "id" : "43643238-e258-430b-b80a-3bde87f5e386",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/subscriptions/{subscriptionId}",
+      "method" : "PATCH",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"id\":\"sub_1001\",\"userId\":\"user_2001\",\"offerId\":\"offer_101\",\"status\":\"ACTIVE\",\"startDate\":\"2024-01-01T00:00:00Z\",\"endDate\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : "{\"status\":\"ACTIVE\"}",
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.905Z",
+      "updatedAt" : "2026-08-14T13:48:12.905Z"
+    }, {
+      "id" : "5f1d0f5d-abda-4df0-9e4c-4986680f4a7d",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/subscriptions/{subscriptionId}/pause",
+      "method" : "POST",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.923Z",
+      "updatedAt" : "2026-08-14T13:48:12.923Z"
+    }, {
+      "id" : "7b0f0c57-ffbb-495d-be89-5c46ba3c56b4",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/subscriptions/{subscriptionId}/renew",
+      "method" : "POST",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{\"id\":\"sub_1001\",\"userId\":\"user_2001\",\"offerId\":\"offer_101\",\"status\":\"ACTIVE\",\"startDate\":\"2024-01-01T00:00:00Z\",\"endDate\":\"2024-01-01T00:00:00Z\"}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.915Z",
+      "updatedAt" : "2026-08-14T13:48:12.915Z"
+    }, {
+      "id" : "bab86b86-2007-464b-9a5c-7bc81cb1f1dd",
+      "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
+      "path" : "/subscriptions/{subscriptionId}/resume",
+      "method" : "POST",
+      "responseStatus" : 200,
+      "responseHeaders" : {
+        "Content-Type" : "application/json"
+      },
+      "responseBody" : "{}",
+      "delayMs" : 0,
+      "isActive" : true,
+      "requestBodySample" : null,
+      "validationMode" : "NONE",
+      "validationSchema" : null,
+      "validateMethod" : true,
+      "createdAt" : "2026-08-14T13:48:12.932Z",
+      "updatedAt" : "2026-08-14T13:48:12.932Z"
+    } ]
+  } ]
+}
