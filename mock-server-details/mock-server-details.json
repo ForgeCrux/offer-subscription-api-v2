@@ -14,9 +14,9 @@
     "delayMs" : 0,
     "requestCount" : 13,
     "createdAt" : "2026-08-14T13:48:12.806Z",
-    "updatedAt" : "2026-08-14T13:48:19.442Z",
+    "updatedAt" : "2026-08-14T15:36:15.366Z",
     "endpoints" : [ {
-      "id" : "02248f46-3e9d-43d1-87b4-5a46a606e629",
+      "id" : "0b83b576-87c0-4c2d-89d6-16ecf7a0563a",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/notifications/send",
       "method" : "POST",
@@ -31,10 +31,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.957Z",
-      "updatedAt" : "2026-08-14T13:48:12.957Z"
+      "createdAt" : "2026-08-14T15:36:15.546Z",
+      "updatedAt" : "2026-08-14T15:36:15.546Z"
     }, {
-      "id" : "d83f73de-cf3f-4c43-a434-1609d29e1845",
+      "id" : "99dafe87-ef89-4836-9449-9f2e8a9a2654",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/offers",
       "method" : "GET",
@@ -49,10 +49,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.848Z",
-      "updatedAt" : "2026-08-14T13:48:12.848Z"
+      "createdAt" : "2026-08-14T15:36:15.420Z",
+      "updatedAt" : "2026-08-14T15:36:15.421Z"
     }, {
-      "id" : "c9860cbf-3ea2-4c35-896b-f163f44c5f57",
+      "id" : "9dff6fc7-6406-4e16-9023-746cb7db0b93",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/offers/{offerId}",
       "method" : "GET",
@@ -67,10 +67,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.860Z",
-      "updatedAt" : "2026-08-14T13:48:12.860Z"
+      "createdAt" : "2026-08-14T15:36:15.431Z",
+      "updatedAt" : "2026-08-14T15:36:15.431Z"
     }, {
-      "id" : "67e3dab3-adb3-4bbd-b873-9e1fad9aafe4",
+      "id" : "d72a74d0-8897-4551-ae2b-1e8a8b70cce9",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/payments",
       "method" : "POST",
@@ -85,10 +85,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.941Z",
-      "updatedAt" : "2026-08-14T13:48:12.941Z"
+      "createdAt" : "2026-08-14T15:36:15.525Z",
+      "updatedAt" : "2026-08-14T15:36:15.526Z"
     }, {
-      "id" : "adb28414-96ec-4e0c-8dca-8dc4e3421568",
+      "id" : "2fc6b634-f34a-4121-9bc9-1515a46f1fd2",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/payments/{paymentId}",
       "method" : "GET",
@@ -103,10 +103,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.950Z",
-      "updatedAt" : "2026-08-14T13:48:12.950Z"
+      "createdAt" : "2026-08-14T15:36:15.538Z",
+      "updatedAt" : "2026-08-14T15:36:15.539Z"
     }, {
-      "id" : "4fd6b4e0-16c2-4480-83c1-327ebaec38fc",
+      "id" : "82e12b4a-4bc8-4cdc-9932-e739fbbfc6df",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/subscriptions",
       "method" : "GET",
@@ -121,10 +121,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.867Z",
-      "updatedAt" : "2026-08-14T13:48:12.868Z"
+      "createdAt" : "2026-08-14T15:36:15.441Z",
+      "updatedAt" : "2026-08-14T15:36:15.441Z"
     }, {
-      "id" : "8cafa2d5-a738-4bc1-866c-1600311a9b9d",
+      "id" : "38b70ffb-dcdf-45db-87d1-7154d9277df6",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/subscriptions",
       "method" : "POST",
@@ -139,10 +139,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.877Z",
-      "updatedAt" : "2026-08-14T13:48:12.878Z"
+      "createdAt" : "2026-08-14T15:36:15.449Z",
+      "updatedAt" : "2026-08-14T15:36:15.450Z"
     }, {
-      "id" : "3436feda-4107-4d46-8bf8-bc88425819e0",
+      "id" : "513d08c7-fab5-46b2-bd66-788ba485bbbd",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/subscriptions/{subscriptionId}",
       "method" : "DELETE",
@@ -157,10 +157,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.896Z",
-      "updatedAt" : "2026-08-14T13:48:12.896Z"
+      "createdAt" : "2026-08-14T15:36:15.470Z",
+      "updatedAt" : "2026-08-14T15:36:15.471Z"
     }, {
-      "id" : "5446c82e-188c-4541-b8d2-91c0bc8644f7",
+      "id" : "f1ca8ce8-5f6f-42c2-affd-8dcc2b3eca00",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/subscriptions/{subscriptionId}",
       "method" : "GET",
@@ -175,10 +175,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.888Z",
-      "updatedAt" : "2026-08-14T13:48:12.888Z"
+      "createdAt" : "2026-08-14T15:36:15.460Z",
+      "updatedAt" : "2026-08-14T15:36:15.461Z"
     }, {
-      "id" : "43643238-e258-430b-b80a-3bde87f5e386",
+      "id" : "3d004de8-2193-4c46-b9e5-22996ff2a71e",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/subscriptions/{subscriptionId}",
       "method" : "PATCH",
@@ -193,10 +193,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.905Z",
-      "updatedAt" : "2026-08-14T13:48:12.905Z"
+      "createdAt" : "2026-08-14T15:36:15.480Z",
+      "updatedAt" : "2026-08-14T15:36:15.481Z"
     }, {
-      "id" : "5f1d0f5d-abda-4df0-9e4c-4986680f4a7d",
+      "id" : "1d04b3f6-268e-4bcf-b927-2a4b570c2140",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/subscriptions/{subscriptionId}/pause",
       "method" : "POST",
@@ -211,10 +211,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.923Z",
-      "updatedAt" : "2026-08-14T13:48:12.923Z"
+      "createdAt" : "2026-08-14T15:36:15.505Z",
+      "updatedAt" : "2026-08-14T15:36:15.505Z"
     }, {
-      "id" : "7b0f0c57-ffbb-495d-be89-5c46ba3c56b4",
+      "id" : "d5010d47-e1b4-4fe1-8583-87801916a938",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/subscriptions/{subscriptionId}/renew",
       "method" : "POST",
@@ -229,10 +229,10 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.915Z",
-      "updatedAt" : "2026-08-14T13:48:12.915Z"
+      "createdAt" : "2026-08-14T15:36:15.494Z",
+      "updatedAt" : "2026-08-14T15:36:15.495Z"
     }, {
-      "id" : "bab86b86-2007-464b-9a5c-7bc81cb1f1dd",
+      "id" : "9a6f5443-5b38-4c8e-89dc-1acbd75ae7fd",
       "mockId" : "53f1b8a3-2087-4771-aa3f-8a6db27976ab",
       "path" : "/subscriptions/{subscriptionId}/resume",
       "method" : "POST",
@@ -247,8 +247,8 @@
       "validationMode" : "NONE",
       "validationSchema" : null,
       "validateMethod" : true,
-      "createdAt" : "2026-08-14T13:48:12.932Z",
-      "updatedAt" : "2026-08-14T13:48:12.932Z"
+      "createdAt" : "2026-08-14T15:36:15.516Z",
+      "updatedAt" : "2026-08-14T15:36:15.516Z"
     } ]
   } ]
 }
